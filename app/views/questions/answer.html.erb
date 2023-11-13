@@ -1,8 +1,15 @@
-<div class="d-flex flex-column align-items-center">
-<h1 class="display-1" my-20> Welcome to stupid coach </h1>
+<div class="container">
+  <h1> Welcome to stupid coach </h1>
 
-<p> <%= params[:question] %> </p>
-<p> <%= @answer %> </p>
+  <div class="card">
+    <p> <%= params[:question] %> </p>
+    <p> <em>- You </em> </p>
+  </div>
 
-<%= link_to "Ask a new question", ask_path %>
+  <div class="card-yellow">
+    <p> <%= @answer %> </p>
+    <p> <em>- Your Coach </em> </p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
 </div>
